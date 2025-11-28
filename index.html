@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas de Regalo Anónimo</title>
+    <!-- Incluir Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Personalización de fuente */
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ------------------ ANIMACIÓN DORADA (AURA) ------------------ */
+
+        /* Definición de la animación de aura pulsante */
+        @keyframes glowing-gold {
+            0% {
+                box-shadow: 0 0 10px 0 #FFD700, 0 0 20px 0 rgba(255, 215, 0, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 15px 5px #FFA500, 0 0 30px 10px rgba(255, 165, 0, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 10px 0 #FFD700, 0 0 20px 0 rgba(255, 215, 0, 0.4);
+            }
+        }
+
+        /* Clase para el destaque dorado/gold highlight */
+        .gold-highlight {
+            position: relative;
+            z-index: 1; 
+            /* Aplica la animación de aura dorada constante */
+            animation: glowing-gold 3s infinite alternate; 
+            transform: scale(1.02); /* Ligeramente más grande para destacarlo */
+            transition: all 0.3s ease-in-out; 
+            /* Sombra base para que la tarjeta se vea elevada */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        }
+
+        /* Remueve el pseudo-elemento ::before y el hover anterior para simplificar */
+        .gold-highlight:hover {
+            transform: scale(1.04); /* Un poco más de zoom al pasar el mouse */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+        }
+        
+        /* ----------------------------------------------------------------- */
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Encabezado Principal --><header class="text-center py-8 mb-10 bg-white shadow-lg rounded-xl">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-2">
+                🎁 Ideas para el Regalo Anónimo 🤫
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                ¿Qué regalar a ese colega o amigo especial? Aquí tienes tres opciones geniales para elevar cualquier setup de trabajo o gaming.
+            </p>
+        </header>
+
+        <!-- SECCIÓN PERSONALIZADA PARA JUEGOS/BROMAS (AQUÍ ESTÁ AHORA) -->
+        <div class="mb-10 p-8 bg-gray-100 rounded-xl shadow-inner border border-dashed border-gray-300 text-center">
+           
+            <!-- CONTENEDOR DE EJEMPLO/PLACEHOLDER -->
+            <div class="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
+                <img 
+                    src="aa.jpg" 
+                    alt="Placeholder para contenido divertido" 
+                    class="mx-auto mt-4 rounded-lg shadow-lg"
+                >
+            </div>
+            <!-- FIN CONTENEDOR DE EJEMPLO/PLACEHOLDER -->
+            
+        </div>
+        <!-- FIN SECCIÓN PERSONALIZADA -->
+
+        <!-- Contenedor de Productos --><div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Tarjeta de Producto 1: Mat de Escritorio (OPCIÓN PREFERIDA DESTACADA) --><div class="product-card bg-white rounded-xl overflow-hidden gold-highlight">
+                <a href="https://inprocl.com/productos/mat-de-escritorio-de-ecocuero?variant=938702099" target="_blank" rel="noopener noreferrer" class="block">
+                    <!-- Imagen de Producto --><img 
+                        src="https://placehold.co/400x200/525252/ffffff?text=Mat+de+Ecocuero" 
+                        alt="Mat de escritorio de ecocuero gris" 
+                        class="w-full h-48 object-cover"
+                    >
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 flex justify-between items-center">
+                            Mouse Pad de Escritorio de Ecocuero (80x40 cm)
+                            <!-- Etiqueta de Destacado --><span class="text-xs font-bold text-yellow-800 bg-yellow-200 px-3 py-1 rounded-full shadow-md">
+                                ¡PREFERIDO!
+                            </span>
+                        </h3>
+                        
+                        <p class="text-3xl font-bold text-indigo-600 mb-4">$10.494 <span class="text-sm font-medium text-gray-400">CLP</span></p>
+                        
+                        <div class="text-sm text-gray-500 space-y-2 mb-4">
+                            <p><strong>Estilo y Sostenibilidad:</strong> Elegante, funcional y hecho de ecocuero vegano.</p>
+                            <p><strong>Descripción:</strong> Superficie resistente a manchas y salpicaduras. Ideal para mejorar la eficiencia del mouse y la estética del escritorio.</p>
+                        </div>
+
+                        <!-- Botón de Acción --><button class="w-full py-3 bg-indigo-500 text-white font-bold rounded-lg shadow-md hover:bg-indigo-600 transition duration-150">
+                            Ver Producto
+                        </button>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarjeta de Producto 2: Soporte de Audífonos --><div class="product-card bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-indigo-300 transition-all duration-300 transform hover:-translate-y-1">
+                <a href="https://www.falabella.com/falabella-cl/product/133458871/Soporte-Auriculares-Ashi/133458872" target="_blank" rel="noopener noreferrer" class="block">
+                    <!-- Imagen de Producto --><img 
+                        src="https://placehold.co/400x200/4f46e5/ffffff?text=NEWSKILL+Soporte+Ashi" 
+                        alt="Soporte de Audífonos Ashi de NEWSKILL" 
+                        class="w-full h-48 object-cover"
+                    >
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">NEWSKILL Soporte Auriculares Ashi</h3>
+                        
+                        <p class="text-3xl font-bold text-indigo-600 mb-4">$8.990 <span class="text-sm font-medium text-gray-400">CLP</span></p>
+                        
+                        <div class="text-sm text-gray-500 space-y-2 mb-4">
+                            <p><strong>Organización Sencilla:</strong> Diseño práctico y compacto para colgar los audífonos bajo el escritorio o monitor.</p>
+                            <p><strong>Descripción:</strong> Ayuda a mantener el espacio de trabajo ordenado y los audífonos protegidos. Es una solución elegante y discreta.</p>
+                        </div>
+
+                        <!-- Botón de Acción --><button class="w-full py-3 bg-indigo-500 text-white font-bold rounded-lg shadow-md hover:bg-indigo-600 transition duration-150">
+                            Ver Producto
+                        </button>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Tarjeta de Producto 3: Teclado Mecánico --><div class="product-card bg-white rounded-xl shadow-2xl overflow-hidden hover:shadow-indigo-300 transition-all duration-300 transform hover:-translate-y-1">
+                <a href="https://fancycustoms.com/products/teclado-75-espanol-aluminio-inalambrico-cableado-negro" target="_blank" rel="noopener noreferrer" class="block">
+                    <!-- Imagen de Producto --><img 
+                        src="https://placehold.co/400x200/374151/ffffff?text=Teclado+Mec%C3%A1nico+75%25" 
+                        alt="Teclado mecánico compacto 75% de aluminio" 
+                        class="w-full h-48 object-cover"
+                    >
+                    
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Teclado Mecánico 75% ISO Español Aluminio</h3>
+                        
+                        <p class="text-3xl font-bold text-indigo-600 mb-4">$249.700 <span class="text-sm font-medium text-gray-400">CLP</span></p>
+                        
+                        <div class="text-sm text-gray-500 space-y-2 mb-4">
+                            <p><strong>Opción de Lujo:</strong> El mejor regalo para el entusiasta de la tecnología.</p>
+                            <p><strong>Descripción:</strong> Compacto 75%, cuerpo de aluminio, conexión triple (Inalámbrico/Cableado) y layout ISO Español. Máxima personalización y rendimiento.</p>
+                        </div>
+
+                        <!-- Botón de Acción --><button class="w-full py-3 bg-indigo-500 text-white font-bold rounded-lg shadow-md hover:bg-indigo-600 transition duration-150">
+                            Ver Producto
+                        </button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Nota al pie (Footer) --><footer class="text-center mt-12 pt-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500">
+                Precios y disponibilidad sujetos a los sitios web originales.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
